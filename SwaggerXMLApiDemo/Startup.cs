@@ -63,7 +63,7 @@ namespace SwaggerXMLApiDemo
             //This line enables Swagger UI, which provides us with a nice, simple UI with which we can view our API calls.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "System Member Platform API v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger XML Api Demo API v1");
             });
         }
     }
