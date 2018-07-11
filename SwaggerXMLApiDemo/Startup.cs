@@ -51,13 +51,13 @@ namespace SwaggerXMLApiDemo
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
-
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "System Member Platform API v1");
             });
+
+            app.UseMvc();
         }
     }
 }

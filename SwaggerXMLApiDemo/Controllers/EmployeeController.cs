@@ -11,13 +11,20 @@ namespace SwaggerXMLApiDemo.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
+        /// <summary>
+        /// Retrieve the employee by their ID.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
+        [Route("{id}")]
         public ActionResult<string> GetByID(int id)
         {
             return "Found Employee";
         }
 
         [HttpGet]
+        [Route("byname/{firstName}/{lastName}")]
         public ActionResult<string> GetByName(string firstName, string lastName)
         {
             return "Found another employee";
